@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="manifest" href="./images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Gentium+Book+Basic:400,400i,700|PT+Sans:400,700"
+    rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="description" content="Developer, Designer, Data. Eddie Kong">
+  <title>Eddie Kong</title>
+</head>
+
+<body>
+  <div id="bar"></div>
+  <div id="body">
+    <div id="homeWrapper">
+      <h1 class="desktop">Eddie Kong</h1>
+      <h1 class="mobile">Eddie K.</h1>
+      <div id="info">
+        <p>I'm Eddie. <br/> Developer, Designer, Data.</p>
+        <p>Take a look at my <a href="./Resume.pdf" target="_blank">resume</a>. <span class="blink">▍</span></p>
+      </div>
+      <div id="connect">
+        <ul>
+          <li>
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/edward-kong-1a059114a/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://github.com/edwardkong">GitHub</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="quoteBar"></div>
+      <blockquote id="quote"></blockquote>
+    </div>
+    <script>
+      var quotes = [
+        "'The future belongs to those who prepare for it today.' - Malcolm X",
+        "'Man is not meant to be humble, he's meant to be humbled.'- Mike Tyson",
+        "'Success is where preparation and opportunity meet.' - Bobby Unser"
+      ];
+
+      function randomQuote() {
+        return quotes[Math.floor(Math.random() * quotes.length)];
+      }
+
+      document.getElementById('quote').innerHTML = randomQuote();
+    </script>
+  </div>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
