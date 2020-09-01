@@ -3,17 +3,20 @@
 <head>
 
     <head>
-        <link rel="manifest" href="./images/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Gentium+Book+Basic:400,400i,700|PT+Sans:400,700"
-            rel="stylesheet">
-        <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="description" content="Developer, Designer, Data. Eddie Kong">
-        <title>Contact | Eddie Kong</title>
+      <script type="text/javascript" src="scripts/global.js"></script>
+      <script type="text/javascript" src="scripts/contact.js"></script>
+      <link rel="manifest" href="./images/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Gentium+Book+Basic:400,400i,700|PT+Sans:400,700"
+          rel="stylesheet">
+      <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+      <meta name="description" content="Developer, Designer, Data. Eddie Kong">
+      <title>Contact | Eddie Kong</title>
     </head>
 </head>
 
@@ -23,13 +26,18 @@
         <h1>
             Contact
         </h1>
-        <p>You can get in touch with me through my <a href="mailto: eddiekong13@gmail.com">email</a>.
+          <ul class="input-group">
+            <li><input type="text" value="eddiekong13@gmail.com" readonly id="email">
+            <li><button onclick="copyEmail()"><i class="iconify" data-icon="octicon:clippy-16" data-inline="true"></i></button></li>
+          </ul>
+          <ul class="input-group">
+            <li><input type="text" value="(732) 325 5055" readonly id="phone">
+            <li><button onclick="copyPhone()"><i class="iconify" data-icon="octicon:clippy-16" data-inline="true"></i></button></li>
+          </ul>
         <div id="quoteBar">
         </div>
-        <blockquote id="quote">
-            Amor fati.
-        </blockquote>
-        <p><a href="./index.html">Back to Home</a></p>
+        <blockquote id="quote"><script>randomQuote()</script></blockquote>
+        <p><a href="./index.html">Home</a></p>
     </div>
    </body>
 
