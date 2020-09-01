@@ -246,6 +246,7 @@ button {
   border-radius: 2px;
   margin-top: 2px;
   background-color: white;
+  color: #333;
 }
 
 button:hover {
@@ -259,7 +260,12 @@ button:active {
 
 
 input[readonly] {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace;
   font-size: 12px;
   height: 20px;
   width: 196px;
@@ -268,6 +274,7 @@ input[readonly] {
   border-radius: 2px;
   background-color: #FFFFFF;
   margin-left: -40px;
+  color: black;
 }
 
 li {
