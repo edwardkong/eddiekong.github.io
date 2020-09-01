@@ -259,7 +259,12 @@ button:active {
 
 
 input[readonly] {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-family: "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace;
   font-size: 12px;
   height: 20px;
   width: 196px;
